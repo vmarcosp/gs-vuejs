@@ -3,5 +3,5 @@
 </div>
 <h1>Repositório destinado aos estudos com VueJS</h1>
 
-# Conteúdo adicional
-## [VueJS cheatsheet](https://vuejs-tips.github.io/cheatsheet/)
+## Conteúdo adicional
+### [VueJS cheatsheet](https://vuejs-tips.github.io/cheatsheet/)
