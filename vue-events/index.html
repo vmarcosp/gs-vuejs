@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Vue</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="app">
+    
+    <ul>
+      <li v-for="fruit in fruits">{{fruit.name}}</li>
+    </ul>
+
+    <input type="text" v-model="newFruit.name">
+    <button @click="addFruit()">Add fruit</button>
+    <br/>
+    
+    <input placeholder="v-on:keyup.enter" type="text" v-on:keyup.enter="say('Hey, i am here!!')">
+    <br/>
+    <input placeholder="@keyup.enter" type="text" @keyup.enter="say('Hey, look me!!')">
+    <br/>
+    <input placeholder="@keyup.alt.67 = ALT + C " type="text" @keyup.alt.67="say('Hey, you pressed ALT + C :D!!')">
+
+    <h2>List of events in VueJS <a href="https://vuejs-tips.github.io/cheatsheet/">Here :D</a></h2>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
