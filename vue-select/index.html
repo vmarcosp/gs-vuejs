@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Vue</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="app">
+    <select v-model="selected">
+        <option v-for="task in tasks" v-bind:value="task.id">{{task.name}}</option>
+    </select>
+    <p>Selected value:<strong>{{selected | json}}</strong></p>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
