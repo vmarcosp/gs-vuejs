@@ -1,0 +1,33 @@
+Vue.component('todo-item',{
+    props:['todo'],
+    template:'<li><strong>{{todo.text}}</strong></li>'
+})
+
+new Vue({
+    el:'#app',
+    data:{
+        todos:[
+            {
+                text:'Description'
+            },
+            {
+                text:'Description'
+            },
+            {
+                text:'Description'
+            },
+            {
+                text:'Description'
+            },
+            {
+                text:'Description'
+            },
+            {
+                text:'Description'
+            },
+            {
+                text:'Description'
+            },
+        ]
+    }
+})
