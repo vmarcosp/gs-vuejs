@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Welcome to Vue</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+  <div id="app">
+    <h1>{{message}}</h1>
+    <h1 v-once>{{message}}</h1>
+    <hr/>
+
+    <h1 v-html="pureHtml"></h1>
+    <h1 v-text="onlyText"></h1>
+    <hr/>
+
+    <button v-bind:disabled="true">I AM DISABLED</button>
+    
+  </div>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
