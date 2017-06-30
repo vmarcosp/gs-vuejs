@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Vue</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div id="app">
+  
+    <button :class="darkClass">CLICK ME </button>
+    <button :class="{'dark':isDarked}">CLICK ME </button>
+    <button :class="conditionClass">CLICK ME </button>
+    
+    <br/>
+    <br/>
+
+    <button @click="invertClasses()" class="dark">CHANGE COLOR</button>
+
+    <br/>
+    <br/>
+
+    <p :style="{color:orangeColor,fontSize:26 + 'px'}">Inline bind style</p>
+
+  </div>  
+
+  <script src="https://unpkg.com/vue"></script>
+  <script src="app.js"></script>
+</body>
+</html>
