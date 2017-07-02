@@ -15,10 +15,13 @@
       <button @click="showOrCloseModal()" class="button is-primary">Abrir o modal</button>
     </div>
     <modal v-show="openModal" @close-modal="showOrCloseModal()">
-      <h1>Titulo do modal</h1>
-      <article>
-          <p>Conteudo do modal</p>
-      </article>
+      <template slot="header">Titulo do modal</template>
+      <template>
+        <p>Texto do modal</p>
+      </template>
+      <template slot="footer">
+        <button type="button" class="button is-danger">Close</button>
+      </template>
     </modal>
   </div>
 
