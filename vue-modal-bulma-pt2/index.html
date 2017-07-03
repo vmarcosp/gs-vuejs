@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>VueJS + Bulma</title>
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div id="app" class="container">
+    <div class="box">
+      <button @click="showOrCloseModal()" class="button is-primary">Abrir o modal</button>
+    </div>
+    <modal v-show="openModal" @close-modal="showOrCloseModal()">
+      <h1>Titulo do modal</h1>
+      <article>
+          <p>Conteudo do modal</p>
+      </article>
+    </modal>
+  </div>
+
+  <script src="https://unpkg.com/vue"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

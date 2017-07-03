@@ -47,6 +47,6 @@ Vue.component('tab', {
     template: `<div v-show="isActive"><slot></slot></div>`
 })
 
-var app = new Vue({
+let app = new Vue({
     el: '#app',
 });

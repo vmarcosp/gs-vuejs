@@ -23,5 +23,5 @@ Vue.component('message', {
 });
 
 var app = new Vue({
-    el: '#app'
+    el: '#app',
 })
